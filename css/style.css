@@ -1,5 +1,39 @@
 @charset "utf-8";
 /* CSS Document */
+html {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 62.5%;
+  color: #553A49;
+}
+:root {
+  --h1-size: clamp(2.4rem, 5vw, 3.6rem);
+  --h2-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  --h3-size: clamp(2.5rem, 5vw, 4.0rem);
+  --p-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  --max-width: 1200px
+}
+    h1 {
+      font-size: var(--h1-size);
+    }
+    h2 {
+      font-size: var(--h2-size);
+    }
+    h3 {
+      font-size: var(--h3-size);
+    }
+    p {
+      font-size: var(--p-size);
+    }
+
+
+a:link{text-decoration: none;color:#553A49;}
+a:visited {text-decoration: none;color:#553A49;}
+a:hover{text-decoration: none;color:#553A49;}
+a:active {text-decoration: none;color: #553A49;}
+    
+
 
 body {
     background-color: #fffbe2;
@@ -11,8 +45,18 @@ body {
 .hero {
     background-image: url(../img/header1900500.png);
     height: 500px;
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.hero h3 {
+    margin-right: 55rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    width: 100%;
 }
