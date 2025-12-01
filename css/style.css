@@ -9,7 +9,7 @@ html {
   font-size: 62.5%
 }
 :root {
-  --h1-size: clamp(2.4rem, 5vw, 3.6rem);
+  --h1-size: clamp(2.4rem, 5vw, 5.0rem);
   --h2-size: clamp(1.8rem, 3.5vw, 2.4rem);
   --h3-size: clamp(2.5rem, 5vw, 4.0rem);
   --p-size: clamp(1.4rem, 2.5vw, 1.6rem);
@@ -18,6 +18,7 @@ html {
     h1 {
       font-size: var(--h1-size);
       color: #553A49;
+      font-weight: 700;
     }
     h2 {
       font-size: var(--h2-size);
@@ -29,6 +30,7 @@ html {
     }
     p {
       font-size: var(--p-size);
+      color: #553A49
     }
 
 
@@ -42,7 +44,7 @@ a:active {text-decoration: none;color: #dc81b3;}
 /* ハンバーガーメニュー */
 nav {
     position: fixed;
-    top: 24px;
+    top: 0px;
     width: 100%;
     z-index: 10;
     background-color: #625B25;
@@ -64,7 +66,7 @@ li a{
     text-decoration: none;
 }
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: 32px;
     right:32px;
     cursor: pointer;
@@ -144,14 +146,56 @@ body {
 
 /* gear ambassadors */
 .ga {
-    background-image: url(../img/top-back1_882573.png);
-    background-size: contain;
+    background-image: url(../img/top_sns_back.png);
+    background-size: 822px 654px;
     background-position: center 15rem;
     background-repeat: no-repeat;
-    height: 573px;
+    filter: brightness(150%);
+    padding: 10em 0 30em 0;
+    margin-bottom: 10rem;
   }
 .ga h1 {
     text-align: center;
-    padding-top: 6rem;
-    margin-bottom: 0;
+    margin-bottom: 5rem;
+}
+.ga p {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.ga-sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.ga-ig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ga-ig img {
+    margin-bottom: 3rem;
+}
+.ga-tk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ga-tk img {
+    margin-bottom: 3rem;
+}
+.ga-x {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ga-x img {
+    margin-bottom: 3rem;
+}
+
+/* Dispatches */
+
+.dpc h1 {
+    text-align: center;
+    margin-bottom: 5rem;
 }
