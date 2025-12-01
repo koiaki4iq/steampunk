@@ -1,11 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
+
+/* フォント */
 html {
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 62.5%;
-  color: #553A49;
+  font-size: 62.5%
 }
 :root {
   --h1-size: clamp(2.4rem, 5vw, 3.6rem);
@@ -16,30 +17,110 @@ html {
 }
     h1 {
       font-size: var(--h1-size);
+      color: #553A49;
     }
     h2 {
       font-size: var(--h2-size);
+      color: #553A49;
     }
     h3 {
       font-size: var(--h3-size);
+      color: #553A49;
     }
     p {
       font-size: var(--p-size);
     }
 
 
-a:link{text-decoration: none;color:#553A49;}
-a:visited {text-decoration: none;color:#553A49;}
-a:hover{text-decoration: none;color:#553A49;}
-a:active {text-decoration: none;color: #553A49;}
+a:link{text-decoration: none;color:#fff;}
+a:visited {text-decoration: none;color:#fff;}
+a:hover{text-decoration: none;color:#dc81b3;}
+a:active {text-decoration: none;color: #dc81b3;}
     
+
+
+/* ハンバーガーメニュー */
+nav {
+    position: fixed;
+    top: 24px;
+    width: 100%;
+    z-index: 10;
+    background-color: #625B25;
+    background-image: url(../img/header_logo.png);
+    background-repeat: no-repeat;
+    background-position: 50px center;
+    background-size: auto 150px;
+}
+ul {
+    display: none;
+    list-style:none;
+}
+li a{
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.hamburger {
+    position: absolute;
+    top: 32px;
+    right:32px;
+    cursor: pointer;
+    width: 32px;
+    height: 24px;
+    z-index: 10;
+}
+.hamburger span {
+    /*3本の線を作る*/
+    transition: all .3s;
+    position: absolute;
+    height: 4px;
+    background-color: #efefef;
+    width:100%;
+    z-index: 10;
+    border-radius: 2px;
+    border: 2px solid #553A49;
+    box-sizing: border-box;
+}
+.hamburger span:nth-of-type(1) {
+    /*上の線の位置*/
+    top: 4px;
+}
+.hamburger span:nth-of-type(2) {
+    /*真ん中の線の位置*/
+    top: 12px;
+}
+.hamburger span:nth-of-type(3) {
+    /*下の線の位置*/
+    top: 20px;
+}
+.hamburger.open span:nth-of-type(1) {
+    /*openのとき、上の線を右斜めにする*/
+    top: 10px;
+    transform: translateY(6px) rotate(-33deg);
+}
+.hamburger.open span:nth-of-type(2) {
+    /*真ん中の線を消す*/
+    opacity: 0;
+}
+.hamburger.open span:nth-of-type(3) {
+    /*下の線を左斜めにする*/
+    top: 22px;
+    transform: translateY(-6px) rotate(33deg);
+}
+
+
+
 
 
 body {
     background-color: #fffbe2;
 }
+
+/* ヘッダー */
 .hero-box {
-    overflow-x: auto;
     width: 100%;
 }
 .hero {
@@ -53,10 +134,24 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    padding: 0 0 5em 0;
+    
 }
 .hero h3 {
-    margin-right: 55rem;
-    margin-bottom: 5rem;
+    margin-left: 25rem;
     text-align: center;
-    width: 100%;
+}
+
+/* gear ambassadors */
+.ga {
+    background-image: url(../img/top-back1_882573.png);
+    background-size: contain;
+    background-position: center 15rem;
+    background-repeat: no-repeat;
+    height: 573px;
+  }
+.ga h1 {
+    text-align: center;
+    padding-top: 6rem;
+    margin-bottom: 0;
 }

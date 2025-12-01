@@ -21,15 +21,50 @@
 <!--ready関数-->
 <script>
 $(function(){
-
+  $('#hamburger').on('click',function(){
+    $('#hamburger').toggleClass("open");
+    $('#header-menu').slideToggle();
+  });
 });
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.hamburger-menu a');
+
+  links.forEach(link => {
+    const originalText = link.textContent;
+    const hoverText = link.dataset.hover;
+
+    link.addEventListener('mouseenter', () => {
+      link.textContent = hoverText;
+    });
+
+    link.addEventListener('mouseleave', () => {
+      link.textContent = originalText;
+    });
+  });
+});
+</script>  
 </head>
     
 <body>
     <div class="hero-box">
-        <header>
+        <header class="header">
+            <nav class="hamburger-menu">
+                <ul id="header-menu">
+                    <li><a href="#" data-hover="Home Hover">Home</a></li>
+                    <li><a href="#" data-hover="About Hover">About</a></li>
+                    <li><a href="#" data-hover="Services Hover">Services</a></li>
+                    <li><a href="#" data-hover="Blog Hover">Blog</a></li>
+                    <li><a href="#" data-hover="Contact Hover">Contact</a></li>
+                    <li><a href="#" data-hover="FAQ Hover">FAQ</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger" class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        
             <div class="hero">
             <h3>歯車ひとつで世界が変わる<br>
                 蒸気仕掛けの町<br>
@@ -37,9 +72,21 @@ $(function(){
             </div>    
         </header>
     </div>
-    <section>
+    <section class="ga">
         <h1>Gear Ambassadors</h1>
+        <div>
+            <div>
+                <img src="img/top_iglogo.png" alt="Instagramロゴ" width="50" height="50">
+                <img src="img/top_sns_ig.png" alt="スチームパンクファッションインスタグラム画面" width="237" height="415">        </div>
+            <div>
+                
+            </div>
+            <div></div>
+        </div>
     </section>
+
+
+  
 </body>
 
 </html>
