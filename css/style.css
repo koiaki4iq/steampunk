@@ -137,6 +137,7 @@ body {
     align-items: flex-end;
     justify-content: flex-start;
     padding: 0 0 5em 0;
+    margin-bottom: 10rem;
     
 }
 .hero h3 {
@@ -148,19 +149,17 @@ body {
 .ga {
     background-image: url(../img/top_sns_back.png);
     background-size: 822px 654px;
-    background-position: center 15rem;
+    background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(150%);
-    padding: 10em 0 30em 0;
     margin-bottom: 10rem;
   }
 .ga h1 {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 .ga p {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 .ga-sns {
     display: flex;
