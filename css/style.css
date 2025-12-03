@@ -201,7 +201,7 @@ body {
 .dpc {
     background-image: url(../img/top-back2_362362.png);
     background-size: 362px 362px;
-    background-position: center;
+    background-position: calc(50% - 230px) calc(50% + 50px);
     background-repeat: no-repeat;
     margin-bottom: 10rem;
 }
@@ -212,30 +212,28 @@ body {
 .dpc-box {
     display: grid;
     grid-template-columns: 1fr 300px; /* 左：表 / 右：画像 */
-    gap: 20px;
+    gap: 10rem;
     align-items: start;
     margin-right: 50rem;
 }
 .dpc-grid {
   display: grid;
   justify-content: flex-start;
-  margin-left: 50rem;
+  margin-left: 40rem;
+  padding-top: 5em;
   gap: 10px; /* 段の間隔 */
 }
 
 .row {
   display: grid;
-  grid-template-columns: 100px 1fr; /* 左：日付 右：テキスト */
+  grid-template-columns: 100px 360px; /* 左：日付 右：テキスト */
   align-items: center;
-  padding: 30px 0;
+  padding: 35px 0;
   border-bottom: 1px solid #625B25; /* 行の区切り線 */
   cursor: pointer; 
 }
 .row:hover {
-  background: #f7f7f7;             /* ホバー時の背景 */
-}
-
-.date {
+  background: rgba(98, 91, 37, 0.2);             /* ホバー時の背景 */
 }
 
 .text {
@@ -247,3 +245,40 @@ body {
   display: block;
   border: 1px solid #ccc;
 }
+
+/* Traveler Guild */
+.tg {
+    background-image: url(../img/top-back3_399399.png), url(../img/top-back4_343343.png), url(../img/top-back5_4181043.png);
+    background-position: left calc(50% + 100px), right calc(50% - 100px), left calc(50% + 500px);
+    background-size: 399px 399px, 343px 343px, 418px 1043px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    margin-bottom: 10rem;
+}
+.tg h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.tg-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tg-info-img {
+    position: relative;
+}
+.tg-info-deco {
+    position: absolute;
+    top: 55px;
+    left: 350px;
+    
+}
+
+.tg-bgc {
+    background-color: rgba(98, 91, 37, 0.2);
+    padding: 3em 3em 3em 5em;
+    margin-top: 8rem;
+}
+.tg-bgc p {
+    padding-top: 3.5em;
+    text-align: end;
+} 
