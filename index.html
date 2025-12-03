@@ -19,6 +19,8 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 
 <!--ready関数-->
+
+<!-- ハンバーガーメニュー -->
 <script>
 $(function(){
   $('#hamburger').on('click',function(){
@@ -28,6 +30,7 @@ $(function(){
 });
 </script>
 
+<!-- ハンバーガーメニュー内のテキスト切り替え -->
 <script>
     document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.hamburger-menu a');
@@ -45,7 +48,9 @@ $(function(){
     });
   });
 });
-</script>  
+</script> 
+
+
 </head>
     
 <body>
@@ -97,9 +102,40 @@ $(function(){
 <!-- Dispatches -->
     <section class="dpc">
       <h1>Dispatches</h1>
-    </section>
+        <div class="dpc-box">
+          <div class="dpc-grid">
+            <div class="row" data-img="img/dispatches1_263372.png">
+              <div class="date"><p>12/01</p></div>
+              <div class="text"><p>イベント開催のお知らせイベント開催のお知らせ</p></div>
+            </div>
 
-  
+            <div class="row" data-img="img/dispatches2_270383.png">
+              <div class="date"><p>12/02</p></div>
+              <div class="text"><p>臨時休業のお知らせ</p></div>
+            </div>
+
+            <div class="row" data-img="img/dispatches3_257364.png">
+              <div class="date"><p>12/03</p></div>
+              <div class="text"><p>新メニュー追加のお知らせ</p></div>
+            </div>
+          </div>
+          <div class="preview">
+            <img id="previewImg" src="img/dispatches1_263372.png" alt="スチームパンクイベントポスター" width="263" height="372">
+          </div>
+        </div>
+    </section>
+<!-- Dispatches画像切り替え -->
+<script>
+  const rows = document.querySelectorAll('.row');
+  const previewImg = document.getElementById('previewImg');
+
+  rows.forEach(row => {
+    row.addEventListener('mouseover', () => {
+      const imgPath = row.getAttribute('data-img');
+      previewImg.src = imgPath;
+    });
+  });
+</script>  
 </body>
 
 </html>

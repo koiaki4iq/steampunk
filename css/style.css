@@ -141,7 +141,7 @@ body {
     
 }
 .hero h3 {
-    margin-left: 25rem;
+    margin-left: 23rem;
     text-align: center;
 }
 
@@ -166,7 +166,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 8rem;
+    gap: 10rem;
 }
 .ga-ig {
     display: flex;
@@ -198,8 +198,52 @@ body {
 }
 
 /* Dispatches */
-
+.dpc {
+    background-image: url(../img/top-back2_362362.png);
+    background-size: 362px 362px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10rem;
+}
 .dpc h1 {
     text-align: center;
     margin-bottom: 5rem;
+}
+.dpc-box {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* 左：表 / 右：画像 */
+    gap: 20px;
+    align-items: start;
+    margin-right: 50rem;
+}
+.dpc-grid {
+  display: grid;
+  justify-content: flex-start;
+  margin-left: 50rem;
+  gap: 10px; /* 段の間隔 */
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 1fr; /* 左：日付 右：テキスト */
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #625B25; /* 行の区切り線 */
+  cursor: pointer; 
+}
+.row:hover {
+  background: #f7f7f7;             /* ホバー時の背景 */
+}
+
+.date {
+}
+
+.text {
+  color: #444;
+}
+.preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ccc;
 }
