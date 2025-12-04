@@ -59,12 +59,13 @@ nav {
     background-color: #625B25;
     background-image: url(../img/header_logo.png);
     background-repeat: no-repeat;
-    background-position: 50px center;
+    background-position: 150px center;
     background-size: auto 150px;
 }
 ul {
     display: none;
     list-style:none;
+    padding-top: 3em;
 }
 li a{
     padding: 0.5em;
