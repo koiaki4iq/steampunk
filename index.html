@@ -33,7 +33,7 @@ $(function(){
 <!-- ハンバーガーメニュー内のテキスト切り替え -->
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('.hamburger-menu a');
+  const links = document.querySelectorAll('.hamburger-menu li a');
 
   links.forEach(link => {
     const originalText = link.textContent;
@@ -65,6 +65,13 @@ $(function(){
                     <li><a href="labrary/index.html" data-hover="スチームパンクとは">Steam Library</a></li>
                     <li><a href="link/index .html" data-hover="同盟ギルド">Clockwork Alliance</a></li>
                     <li><a href="index.html" data-hover="ホーム">Lürßtal</a></li>
+                    <div class="rivet-box">
+                      <span class="rivet bl"></span>
+                      <span class="rivet br"></span>
+                      <a href=""><img src="../img/footer_ig.png" alt="" width="30" height="30"></a>
+                      <a href=""><img src="../img/footer_tk.png" alt="" width="30" height="30"></a>
+                      <a href=""><img src="../img/footer_x.png" alt="" width="30" height="30"></a>
+                    </div>
                 </ul>
             </nav>
             <div id="hamburger" class="hamburger">
@@ -145,7 +152,7 @@ $(function(){
       <div class="tg-engine">
         <div class="engine-text">
           <h4>機関庫跡公園</h4>
-          <p>イベント紹介</p>
+          <p>イベント情報</p>
         </div>
         <img src="img/guild_engine664268.png" alt="街の中央の広場でバンド演奏している" width="664" height="268">  
       </div>
@@ -188,19 +195,24 @@ $(function(){
     </section>
 
 <!-- footer -->
- <footer>
+<footer>
+  <div class="footer-box">
     <div>
-      <img src="img/footer_logo.png" alt="">
-      <div>
-        <img src="img/footer_ig.png" alt="" width="40" height="40">
-        <img src="img/footer_tk.png" alt="" width="50" height="50">
+      <img class="footer-logo" src="img/footer_logo.png" alt="" width="153" height="124">
+      <div class="footer-sns">
+        <img src="img/footer_ig.png" alt="" width="30" height="30">
+        <img src="img/footer_tk.png" alt="" width="30" height="30">
         <img src="img/footer_x.png" alt="" width="30" height="30">
       </div>
     </div>
-    <div>
-       
+    <div class="footer-link">
+      <p>text</p>
+      <p>text</p>
+      <p>text</p>
     </div>
- </footer>
+    <h5>© 2025 Lürßtal</h5>
+  </div>
+</footer>
 
 <!-- Dispatches画像切り替え -->
 <script>
