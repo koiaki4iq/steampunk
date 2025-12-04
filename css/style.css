@@ -310,7 +310,7 @@ body {
 .tg-engine {
     display: flex;
     margin-bottom: 10rem;
-    gap: 5rem;
+    gap: 3rem;
 }
 .engine-text {
     display: flex;
@@ -320,18 +320,38 @@ body {
 .tg-blass {
     display: flex;
     margin-bottom: 5rem;
+    gap: 3rem;
+}
+.blass-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .tg-victorian {
     display: flex;
     margin-bottom: 5rem;
+    gap: 3rem;
+}
+.victorian-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .tg-chimney {
     display: flex;
     margin-bottom: 5rem;
+    gap: 3rem;
+}
+.chimney-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .tg-labrary {
     display: flex;
+    gap: 3rem;
+}
+.labrary-text {
+    display: flex;
+    flex-direction: column;
 }
