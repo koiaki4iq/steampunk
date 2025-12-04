@@ -12,6 +12,7 @@ html {
   --h1-size: clamp(2.4rem, 5vw, 5.0rem);
   --h2-size: clamp(1.8rem, 3.5vw, 4.0rem);
   --h3-size: clamp(2.5rem, 5vw, 4.0rem);
+  --h4-size: clamp(2.5rem, 5vw, 2.5rem);
   --p-size: clamp(1.4rem, 2.5vw, 1.6rem);
   --max-width: 1200px
 }
@@ -30,6 +31,10 @@ html {
 
     h3 {
       font-size: var(--h3-size);
+      color: #553A49;
+    }
+    h4 {
+      font-size: var(--h4-size);
       color: #553A49;
     }
     p {
@@ -62,8 +67,8 @@ ul {
     list-style:none;
 }
 li a{
-    padding: 8px;
-    font-size: 16px;
+    padding: 1em;
+    font-size: 24px;
     color: #fff;
     display: block;
     text-align: center;
@@ -252,12 +257,25 @@ body {
 
 /* Traveler Guild */
 .tg {
-    background-image: url(../img/top-back3_399399.png), url(../img/top-back4_343343.png), url(../img/top-back5_4181043.png);
-    background-position: left calc(50% + 100px), right calc(50% - 100px), left calc(50% + 500px);
+    background-image: 
+        url(../img/top-back3_399399.png), 
+        url(../img/top-back4_343343.png), 
+        url(../img/top-back5_4181043.png);
+
+    background-position: 
+        left calc(50% - 500px), 
+        right calc(50% - 100px), 
+        left calc(50% + 500px);
+
     background-size: 399px 399px, 343px 343px, 418px 1043px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .tg h1 {
     text-align: center;
     margin-bottom: 5rem;
@@ -266,6 +284,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10rem;
 }
 .tg-info-img {
     position: relative;
@@ -274,9 +293,7 @@ body {
     position: absolute;
     top: 55px;
     left: 350px;
-    
 }
-
 .tg-bgc {
     background-color: rgba(98, 91, 37, 0.2);
     padding: 3em 3em 3em 5em;
@@ -286,3 +303,35 @@ body {
     padding-top: 3.5em;
     text-align: end;
 } 
+.tg h2 {
+    margin-bottom: 2rem;
+}
+
+.tg-engine {
+    display: flex;
+    margin-bottom: 10rem;
+    gap: 5rem;
+}
+.engine-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.tg-blass {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.tg-victorian {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.tg-chimney {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.tg-labrary {
+    display: flex;
+}
