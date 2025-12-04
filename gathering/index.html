@@ -2,23 +2,73 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>タイトル</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<title>steampunk</title>
+
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+<!--ビューポート-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--jQuery本体-->
-<script src="js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery-1.11.2.min.js"></script>
 
 <!--ready関数-->
+
+<!-- ハンバーガーメニュー -->
 <script>
 $(function(){
-
+  $('#hamburger').on('click',function(){
+    $('#hamburger').toggleClass("open");
+    $('#header-menu').slideToggle();
+  });
 });
 </script>
+
+<!-- ハンバーガーメニュー内のテキスト切り替え -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.hamburger-menu a');
+
+  links.forEach(link => {
+    const originalText = link.textContent;
+    const hoverText = link.dataset.hover;
+
+    link.addEventListener('mouseenter', () => {
+      link.textContent = hoverText;
+    });
+
+    link.addEventListener('mouseleave', () => {
+      link.textContent = originalText;
+    });
+  });
+});
+</script> 
+
 
 </head>
 
 <body>
-
+    <nav class="hamburger-menu">
+                <ul id="header-menu">
+                    <li><a href="gathering/index.html" data-hover="イベント情報">Old Engine Plaza</a></li>
+                    <li><a href="" data-hover="交流掲示板">Brass Alley</a></li>
+                    <li><a href="fashion/index.html" data-hover="ファッション">Victorian Lane</a></li>
+                    <li><a href="crafts/index.html" data-hover="クラフト">Chimney Avenue</a></li>
+                    <li><a href="labrary/index.html" data-hover="スチームパンクとは">Steam Library</a></li>
+                    <li><a href="link/index .html" data-hover="同盟ギルド">Clockwork Alliance</a></li>
+                    <li><a href="index.html" data-hover="ホーム">Lürßtal</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger" class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
 </body>
 
 </html>
+

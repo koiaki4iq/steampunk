@@ -67,7 +67,7 @@ ul {
     list-style:none;
 }
 li a{
-    padding: 1em;
+    padding: 0.5em;
     font-size: 24px;
     color: #fff;
     display: block;
@@ -354,4 +354,12 @@ body {
 .labrary-text {
     display: flex;
     flex-direction: column;
+}   
+
+/* footer */
+footer {
+    background-color: #625B25;
+    width: ;
 }
+
+
