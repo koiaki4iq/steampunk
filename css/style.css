@@ -131,6 +131,7 @@ body {
     background-color: #fffbe2;
 }
 
+
 /* ヘッダー */
 .hero-box {
     width: 100%;
@@ -148,20 +149,122 @@ body {
     justify-content: flex-start;
     padding: 0 0 5em 0;
     margin-bottom: 10rem;
-    
 }
 .hero h3 {
     margin-left: 23rem;
     text-align: center;
 }
 
-.sub-header {
+
+
+
+/* sub-header */
+.sub-header-color {
     background-color: #625B25;
     width: 100%;
+}
+.sub-header {
     max-width: 1200px;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
+.sub-header-text,
+.sub-header-burger {
+    flex: 1;
+}
+
+.sub-header-logo {
+    text-align: center;
+}
+.sub-header-text p {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    padding-left: 1em;
+}
+/* sub-header hamburger*/
+nav {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 10;
+    background-color: #625B25;
+    background-image: url(../img/header_logo.png);
+    background-repeat: no-repeat;
+    background-position: 150px center;
+    background-size: auto 150px;
+}
+ul {
+    display: none;
+    list-style:none;
+    padding-top: 3em;
+}
+li a{
+    padding: 0.5em;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.sub-header-burger {
+    position: relative;
+}
+.sub-hamburger {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    cursor: pointer;
+    width: 32px;
+    height: 24px;
+    z-index: 10;
+}
+.sub-hamburger span {
+    /*3本の線を作る*/
+    transition: all .3s;
+    position: absolute;
+    height: 4px;
+    background-color: #efefef;
+    width:100%;
+    z-index: 10;
+    border-radius: 2px;
+    border: 1px solid #553A49;
+    box-sizing: border-box;
+}
+.sub-hamburger span:nth-of-type(1) {
+    /*上の線の位置*/
+    top: 4px;
+}
+.sub-hamburger span:nth-of-type(2) {
+    /*真ん中の線の位置*/
+    top: 12px;
+}
+.sub-hamburger span:nth-of-type(3) {
+    /*下の線の位置*/
+    top: 20px;
+}
+.sub-hamburger.open span:nth-of-type(1) {
+    /*openのとき、上の線を右斜めにする*/
+    top: 10px;
+    transform: translateY(6px) rotate(-33deg);
+}
+.sub-hamburger.open span:nth-of-type(2) {
+    /*真ん中の線を消す*/
+    opacity: 0;
+}
+.sub-hamburger.open span:nth-of-type(3) {
+    /*下の線を左斜めにする*/
+    top: 22px;
+    transform: translateY(-6px) rotate(33deg);
+}
+    
+
+
+
 
 /* gear ambassadors */
 .ga {
@@ -215,6 +318,10 @@ body {
     margin-bottom: 3rem;
 }
 
+
+
+
+
 /* Dispatches */
 .dpc {
     background-image: url(../img/top-back2_362362.png);
@@ -263,6 +370,11 @@ body {
   display: block;
   border: 1px solid #ccc;
 }
+
+
+
+
+
 
 /* Traveler Guild */
 .tg {
@@ -365,6 +477,11 @@ body {
     flex-direction: column;
 }   
 
+
+
+
+
+
 /* footer */
 footer {
     background-color: #625B25;
@@ -373,6 +490,7 @@ footer {
 .footer-box {
     max-width: 1200px;
     margin: 0 auto;
+    padding-left: 25em;
     display: flex;
     gap: 18rem;
 }
@@ -395,6 +513,11 @@ footer {
     align-items: flex-end;
     color: #fff;
 }
+
+
+
+
+
 
 /* snsリンク */
 .rivet-box {
@@ -469,3 +592,47 @@ footer {
 }
 
 
+
+
+/* 下層ページ */
+.sub-wrapper {
+    width: min(100% - 4em, 1200px);
+    margin-inline: auto;
+}
+
+
+
+
+
+/* crafts */
+.crafts-title {
+    display: flex;
+    margin: 5rem auto;
+    width: 30%;
+    height: auto;
+}
+.crafts-top {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+.crafts-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem auto; 
+}
+.crafts-text h4 {
+    margin-bottom: 3rem;
+}
+.crafts-text p {
+    padding: 1em 0;
+    align-items: flex-start;
+}
+.crafts-btm {
+    display: flex;
+    margin: 5rem auto;
+    width: 50%;
+    height: auto;
+}
