@@ -641,6 +641,45 @@ footer {
 .crafts-btm {
     display: flex;
     margin: 5rem auto;
+    width: 5
+    30%;
+    height: auto;
+}
+
+
+
+
+/* fashion */
+.fashion-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+}
+.fashion-title img {
     width: 50%;
     height: auto;
+}
+.fashion-df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.fashion-text h4 {
+    margin-bottom: 1rem;
+}
+.fashion-text p {
+    padding: 1em
+}
+.fashion-btm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fashion-btm img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 5rem;
 }
