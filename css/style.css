@@ -159,9 +159,11 @@ body {
 }
 .hero h3 {
     position: absolute;
-    top: 280px;
-    left: 250px;
+    top: 250px;
+    left: 340px;
     text-align: center;
+    white-space: nowrap;
+    line-height: 1.9;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7),
                  0px 0px 10px rgba(70, 70, 70, 0.8);
 }
