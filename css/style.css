@@ -160,7 +160,7 @@ body {
     margin-left: 23rem;
     text-align: center;
     text-shadow: 2px 3px 3px rgba(229, 226, 226, 0.4),
-                 0px 0px 20px rgba(70, 70, 70, 0.63);
+                 0px 0px 20px rgba(70, 70, 70, 0.8);
 }
 
 
@@ -650,7 +650,7 @@ footer {
 
 
 /* fashion */
-.fashion-title{
+.fashion-title h3 { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,5 +681,40 @@ footer {
 .fashion-btm img {
     width: 50%;
     height: auto;
+    margin-bottom: 5rem;
+}
+
+
+
+
+/* gazette */
+.gzt-h3 {
+    display: flex;
+    justify-content: center;
+    margin: 10rem auto;
+}
+.gzt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.gzt p {
+    padding: 1em;
+}
+.gzt-info {
+    width: 100%;
+    max-width: 530px;
+    background-color: #fff;
+    color: #444;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-top: 5rem;
+}
+.gzt-info th, 
+.gzt-info td {
+    padding: 1.2em;
+}
+.gzt img {
     margin-bottom: 5rem;
 }
