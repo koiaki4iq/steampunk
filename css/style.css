@@ -20,7 +20,7 @@ html {
       font-size: var(--h1-size);
       color: #553A49;
       font-weight: 700;
-      text-shadow: 2px 3px 3px rgba(229, 226, 226, 0.4), 
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8), 
                    0px 0px 20px rgba(70, 70, 70, 0.63);
     }
     h2 {
@@ -29,7 +29,7 @@ html {
         font-family: "UnifrakturMaguntia", cursive;
         font-weight: 400;
         font-style: normal;
-        text-shadow: 2px 3px 3px rgba(229, 226, 226, 0.4), 
+        text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8), 
                    0px 0px 20px rgba(70, 70, 70, 0.63);
     }
 
@@ -40,7 +40,7 @@ html {
     h4 {
       font-size: var(--h4-size);
       color: #553A49;
-      text-shadow: 2px 3px 3px rgba(229, 226, 226, 0.4), 
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8), 
                    0px 0px 20px rgba(70, 70, 70, 0.63);
     }
     p {
@@ -155,11 +155,14 @@ body {
     justify-content: flex-start;
     padding: 0 0 5em 0;
     margin-bottom: 10rem;
+    position: relative;
 }
 .hero h3 {
-    margin-left: 23rem;
+    position: absolute;
+    top: 280px;
+    left: 250px;
     text-align: center;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8),
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7),
                  0px 0px 10px rgba(70, 70, 70, 0.8);
 }
 
@@ -455,6 +458,7 @@ li a{
 .blass-text {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 .tg-victorian {
@@ -729,4 +733,33 @@ footer {
     display: flex;
     justify-content: center;
     margin: 10rem auto;
+    width: 30%;
+    height: auto;
+}
+.lbr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+}
+.lbr img {
+    width: 50%;
+    height: auto;
+}
+.lbr-text h4 {
+    margin-bottom: 2rem;
+}
+.lbr-text p {
+    padding: 1em;
+}
+.lbr-btm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.lbr-btm img {
+    width: 80%;
+    height: auto;
 }
