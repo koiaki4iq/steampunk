@@ -351,7 +351,7 @@ li a{
 .dpc-box {
     display: grid;
     grid-template-columns: 1fr 300px; /* 左：表 / 右：画像 */
-    gap: 10rem;
+    gap: 5rem;
     align-items: start;
     margin-right: 50rem;
 }
@@ -360,7 +360,6 @@ li a{
   justify-content: flex-start;
   margin-left: 40rem;
   padding-top: 5em;
-  gap: 10px; /* 段の間隔 */
 }
 
 .row {
@@ -720,7 +719,10 @@ footer {
 }
 .gzt-info th, 
 .gzt-info td {
-    padding: 1.2em;
+    padding: 0.9em;
+}
+.gzt-info span {
+    font-weight: normal;
 }
 .gzt img {
     margin-bottom: 5rem;
