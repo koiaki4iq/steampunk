@@ -12,7 +12,7 @@ html {
   --h1-size: clamp(2.4rem, 5vw, 5.0rem);
   --h2-size: clamp(1.8rem, 3.5vw, 4.0rem);
   --h3-size: clamp(2.5rem, 5vw, 4.0rem);
-  --h4-size: clamp(2.5rem, 5vw, 2.5rem);
+  --h4-size: clamp(1.6rem, 5vw, 2.5rem);
   --p-size: clamp(1.4rem, 2.5vw, 1.6rem);
   --max-width: 1200px
 }
@@ -40,14 +40,16 @@ html {
     h4 {
       font-size: var(--h4-size);
       color: #553A49;
-      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8), 
-                   0px 0px 20px rgba(70, 70, 70, 0.63);
     }
     p {
       font-size: var(--p-size);
       color: #553A49
     }
-
+@media screen and (max-width: 480px) {
+    h1, h2 {
+        text-shadow: none;
+    }
+}
 
 a:link{text-decoration: none;color:#fff;}
 a:visited {text-decoration: none;color:#fff;}
@@ -128,6 +130,15 @@ li a{
     top: 22px;
     transform: translateY(-6px) rotate(33deg);
 }
+@media screen and (max-width: 480px) {
+    .hamburger{
+        top: 20px;
+        right: auto;
+        left: 10px;
+        width: 28px;
+        height: 22px;
+    }
+}
 
 
 
@@ -142,6 +153,7 @@ body {
 .hero-box {
     width: 100%;
 }
+
 .hero {
     background-image: url(../img/header1900500.png);
     height: 500px;
@@ -153,14 +165,11 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    padding: 0 0 5em 0;
+    padding-left: 20vw;
+    padding-bottom: 3vw;
     margin-bottom: 10rem;
-    position: relative;
 }
 .hero h3 {
-    position: absolute;
-    top: 250px;
-    left: 340px;
     text-align: center;
     white-space: nowrap;
     line-height: 1.9;
@@ -168,6 +177,21 @@ body {
                  0px 0px 10px rgba(70, 70, 70, 0.8);
 }
 
+@media screen and (max-width: 480px) {
+    .hero {
+        max-width: 100%;
+        height: 30vh;
+        padding-left: 1.5em;
+        padding-bottom: 2em;
+    }
+    .hero h3 {
+        text-shadow: none;
+        font-size: 1.2rem;
+        text-align: left;
+
+    }
+    
+}
 
 
 
@@ -280,6 +304,16 @@ li a{
 
 
 
+
+.wrapper {
+    width: min(100% - 4em, 1200px);
+    margin-inline: auto;
+}
+
+
+
+
+
 /* gear ambassadors */
 .ga {
     background-image: url(../img/top_sns_back.png);
@@ -287,8 +321,7 @@ li a{
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 10rem;
-    
-  }
+}
 .ga h1 {
     text-align: center;
     margin-bottom: 2rem;
@@ -301,37 +334,63 @@ li a{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 10rem;
+    gap: 5rem;
 }
 .ga-ig {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.ga-ig img {
+.ig-logo {
     margin-bottom: 3rem;
+    width: 10%;
+    height: auto;
+}
+.ig-img {
+    width: 80%;
+    height: auto;
 }
 .ga-tk {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.ga-tk img {
+.tk-logo {
     margin-bottom: 3rem;
+    width: 10%;
+    height: auto;
 }
+
 .ga-tk video {
-    margin-top: 0.7rem;
+    margin-top: 0.3rem;
+    width: 80%;
+    height: auto;
 }
+
 
 .ga-x {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.ga-x img {
+.x-logo {
     margin-bottom: 3rem;
+    width: 8%;
+    height: auto;
+}
+.x-img {
+    width: 80%;
+    height: auto;
 }
 
+@media screen and (max-width: 480px){
+    .ga {
+        background-image: none;
+    }
+    .ga-sns {
+        gap: 2rem;
+    }
+}
 
 
 
@@ -343,22 +402,21 @@ li a{
     background-position: calc(50% - 230px) calc(50% + 50px);
     background-repeat: no-repeat;
     margin-bottom: 10rem;
-}
+}    
 .dpc h1 {
     text-align: center;
     margin-bottom: 5rem;
 }
 .dpc-box {
     display: grid;
-    grid-template-columns: 1fr 300px; /* 左：表 / 右：画像 */
+    grid-template-columns: 650px 300px; /* 左：表 / 右：画像 */
     gap: 5rem;
     align-items: start;
-    margin-right: 50rem;
+
 }
 .dpc-grid {
   display: grid;
-  justify-content: flex-start;
-  margin-left: 40rem;
+  justify-content: center;
   padding-top: 5em;
 }
 
@@ -382,6 +440,29 @@ li a{
   height: auto;
   display: block;
   border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 480px) {
+    .dpc {
+        background-image: none;
+    }
+    .dpc h1{
+        margin-bottom: 0;
+    }
+    .dpc-box {
+        margin: 0 auto;
+        display: block;
+    }
+    .dpc-grid {
+        padding: 0;
+    }
+    .preview {
+        display: none;
+    }
+    .row {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 
@@ -428,6 +509,7 @@ li a{
     top: 55px;
     left: 350px;
 }
+
 .tg-bgc {
     background-color: rgba(98, 91, 37, 0.2);
     padding: 3em 3em 3em 5em;
@@ -439,6 +521,8 @@ li a{
 } 
 .tg h2 {
     margin-bottom: 2rem;
+    display:flex;
+    justify-content: center;
 }
 
 .tg-engine {
@@ -450,7 +534,10 @@ li a{
     display: flex;
     flex-direction: column;
 }
-
+.tg-engine img {
+    width: 80%;
+    height: auto;
+}
 .tg-blass {
     display: flex;
     margin-bottom: 5rem;
@@ -460,6 +547,10 @@ li a{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+.tg-blass img {
+    width: 80%;
+    height: auto;
 }
 
 .tg-victorian {
@@ -471,6 +562,10 @@ li a{
     display: flex;
     flex-direction: column;
 }
+.tg-victorian img {
+    width: 80%;
+    height: auto;
+}
 
 .tg-chimney {
     display: flex;
@@ -481,6 +576,10 @@ li a{
     display: flex;
     flex-direction: column;
 }
+.tg-chimney img {
+    width: 80%;
+    height: auto;
+}
 
 .tg-labrary {
     display: flex;
@@ -490,7 +589,67 @@ li a{
     display: flex;
     flex-direction: column;
 }   
+.tg-labrary img {
+    width: 80%;
+    height: auto;
+}
 
+
+@media screen and (max-width: 480px){
+    .tg {
+        background-image: none;
+        display: block;
+    }
+    .tg h2 {
+        margin: 0.5rem;
+    }
+    .tg-info {
+        display: block;
+        margin: 0 auto;
+    }
+    .tg-info-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tg-info-main {
+        width: 50%;
+        height: auto;
+    }
+    .tg-info-deco {
+        visibility: hidden;
+    }
+    .tg-bgc {
+        background-color: transparent;
+        margin: 0;
+    }
+    .tg-bgc p {
+        padding: 0;
+        text-align: start;
+        margin-bottom: 3rem;
+    }
+    .tg-engine {
+        display: block;
+        margin-bottom: 5rem;
+    }
+    .tg-blass {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .blass-text {
+        display: block;
+    }
+    .tg-victorian {
+        display: block;
+    }
+    .tg-chimney {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .tg-labrary {
+        display: block;
+    }
+}
 
 
 
@@ -528,6 +687,23 @@ footer {
     justify-content: flex-end;
     align-items: flex-end;
     color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-box {
+        display: block;
+        padding-left: 0;
+    }
+    .footer-box h5 {
+        display: block;
+        margin-top: 3rem;
+    }
 }
 
 

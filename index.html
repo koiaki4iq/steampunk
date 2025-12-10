@@ -87,22 +87,23 @@ $(function(){
     </div>
 
 <!-- Gear Ambassadors -->
+ <div class="wrapper">
     <section class="ga">
       <h1>Gear Ambassadors</h1>
       <p>リュルストタール公認「歯車親善大使」<br>
         snsリンク 投稿された記事を掲載</p>
       <div class="ga-sns">
           <div class="ga-ig">
-              <img src="img/top_iglogo.png" alt="Instagramロゴ" width="40" height="40">
-              <img src="img/top_sns_ig.png" alt="スチームパンクファッションインスタグラムポスト" width="237" height="415">        
+              <img class="ig-logo" src="img/top_iglogo.png" alt="Instagramロゴ" width="40" height="40">
+              <img class="ig-img" src="img/top_sns_ig.png" alt="スチームパンクファッションインスタグラムポスト" width="237" height="415">        
           </div>
           <div class="ga-tk">
-              <img src="img/top-tk2731.png" alt="tiktokロゴ" width="27" height="31">
-              <video src="img/top-tk659257.mp4" width="237" height="415" controls></video>
+              <img class="tk-logo" src="img/top-tk2731.png" alt="tiktokロゴ" width="27" height="31">
+              <video class="tk-vid" src="img/top-tk659257.mp4" width="237" height="415" controls></video>
           </div>
           <div class="ga-x">
-              <img src="img/top_xlogo.png" alt="xロゴ" width="27" height="28">
-              <img src="img/top_sns_x.png" alt="スチームパンクニュースxポスト" width="237" height="415">
+              <img class="x-logo" src="img/top_xlogo.png" alt="xロゴ" width="27" height="28">
+              <img class="x-img" src="img/top_sns_x.png" alt="スチームパンクニュースxポスト" width="237" height="415">
           </div>
       </div>
     </section>
@@ -128,7 +129,7 @@ $(function(){
           </div>
         </div>
         <div class="preview">
-          <a href="ivent/index.html"><img id="previewImg" src="img/dispatches1_263372.png" alt="スチームパンクイベントポスター" width="263" height="372"></a>
+          <a href="ivent/index.html"><img id="previewImg" src="img/top_gazette1_264374.png" alt="スチームパンクイベントポスター" width="263" height="374"></a>
         </div>
       </div>
     </section>
@@ -148,52 +149,62 @@ $(function(){
         </div>
       </div>
 
-      <h2>Old Engine Plaza</h2>
-      <div class="tg-engine">
-        <div class="engine-text">
-          <h4>機関庫跡公園</h4>
-          <p>イベント情報</p>
+      <a href="gazette/index.html">
+        <h2>Old Engine Plaza</h2>
+        <div class="tg-engine">
+          <div class="engine-text">
+            <h4>機関庫跡公園</h4>
+            <p>イベント情報</p>
+          </div>
+          <img src="img/guild_engine664268.png" alt="街の中央の広場でバンド演奏している" width="664" height="268">  
         </div>
-        <img src="img/guild_engine664268.png" alt="街の中央の広場でバンド演奏している" width="664" height="268">  
-      </div>
+      </a>
 
-      <h2>Brass Alley</h2>
-      <div class="tg-blass">
-        <img src="img/guild_brass664268.png" alt="大勢の人たちで賑わう酒場" width="664" height="268">
-        <div class="blass-text">
-          <h4>真鍮横丁</h4>
-          <p>交流掲示板</p>
+      <a href="https://ak-steampunk.blush.jp/">
+        <h2>Brass Alley</h2>
+        <div class="tg-blass">
+          <img src="img/guild_brass664268.png" alt="大勢の人たちで賑わう酒場" width="664" height="268">
+          <div class="blass-text">
+            <h4>真鍮横丁</h4>
+            <p>交流掲示板</p>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <h2>Victorian Lane</h2>
-      <div class="tg-victorian">
-        <div class="victorian-text">
-          <h4>旧市街</h4>
-          <p>ファッション紹介</p>
+      <a href="fashion/index.html">
+        <h2>Victorian Lane</h2>
+        <div class="tg-victorian">
+          <div class="victorian-text">
+            <h4>旧市街</h4>
+            <p>ファッション</p>
+          </div>
+          <img src="img/guild_victoria664268.png" alt="通りを歩くスチームパンクファッションの女性" width="664" height="268">
         </div>
-        <img src="img/guild_victoria664268.png" alt="通りを歩くスチームパンクファッションの女性" width="664" height="268">
-      </div>
+      </a>
 
-      <h2>Chimney Avenue</h2>
-      <div class="tg-chimney">
-        <img src="img/guild_chimny664268.png" alt="不思議な形のスチームパンククラフトの数々" width="664" height="268">
-        <div class="chimney-text">
-          <h4>煙突通り</h4>
-          <p>クラフト紹介</p>
+      <a href="crafts/index.html">
+        <h2>Chimney Avenue</h2>
+        <div class="tg-chimney">
+          <img src="img/guild_chimny664268.png" alt="不思議な形のスチームパンククラフトの数々" width="664" height="268">
+          <div class="chimney-text">
+            <h4>煙突通り</h4>
+            <p>クラフト</p>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <h2>Steam Library</h2>
-      <div class="tg-labrary">
-        <div class="labrary-text">
-          <h4>蒸気図書館</h4>
-          <p>スチームパンクについて</p>
+      <a href="labrary/index.html">
+        <h2>Steam Library</h2>
+        <div class="tg-labrary">
+          <div class="labrary-text">
+            <h4>蒸気図書館</h4>
+            <p>スチームパンクについて</p>
+          </div>
+          <img src="img/guild_labrary664268.png" alt="吹き抜けが特徴的な解放感のある図書館" width="664" height="268">
         </div>
-        <img src="img/guild_labrary664268.png" alt="吹き抜けが特徴的な解放感のある図書館" width="664" height="268">
-      </div>
+        </a>
     </section>
-
+ </div>
 <!-- footer -->
 <footer>
   <div class="footer-box">
@@ -206,9 +217,9 @@ $(function(){
       </div>
     </div>
     <div class="footer-link">
-      <p>text</p>
-      <p>text</p>
-      <p>text</p>
+      <a href=""><p>Gazette</p></a>
+      <a href="https://ak-steampunk.blush.jp/"><p>BBS</p></a>
+      <a href="index.html"><p>Lürßtal</p></a>
     </div>
     <h5>© 2025 Lürßtal</h5>
   </div>
