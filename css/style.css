@@ -672,12 +672,14 @@ footer {
 }
 .footer-box {
     max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 25em;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 18rem;
 }
 .footer-logo {
+    width: 30%;
+    height: auto;
     margin: 5rem 0 0 2rem;
 }
 .footer-sns {
@@ -697,6 +699,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-top: 25em;
     color: #fff;
 }
 
@@ -985,7 +988,6 @@ footer {
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .about h1 {
