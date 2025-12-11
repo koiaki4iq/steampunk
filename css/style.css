@@ -163,11 +163,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     padding-left: 20vw;
     padding-bottom: 3vw;
     margin-bottom: 10rem;
+}
+.header-text p {
+    margin-top: 1rem;
+    color: #fff;
 }
 .hero h3 {
     text-align: center;
@@ -950,4 +955,15 @@ footer {
 .lbr-btm img {
     width: 80%;
     height: auto;
+}
+
+/* link */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner img {
+    margin-top: 5rem;
 }
