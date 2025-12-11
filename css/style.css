@@ -362,7 +362,7 @@ li a{
 }
 
 .ga-tk video {
-    margin-top: 0.3rem;
+    margin-top: -1rem;
     width: 80%;
     height: auto;
 }
@@ -527,7 +527,8 @@ li a{
 
 .tg-engine {
     display: flex;
-    margin-bottom: 10rem;
+    justify-content: center;
+    margin-bottom: 7rem;
     gap: 3rem;
 }
 .engine-text {
@@ -535,12 +536,13 @@ li a{
     flex-direction: column;
 }
 .tg-engine img {
-    width: 70%;
+    width: 60%;
     height: auto;
 }
 .tg-blass {
     display: flex;
-    margin-bottom: 5rem;
+    justify-content: center;
+    margin-bottom: 7rem;
     gap: 3rem;
 }
 .blass-text {
@@ -549,13 +551,14 @@ li a{
     align-items: flex-end;
 }
 .tg-blass img {
-    width: 70%;
+    width: 60%;
     height: auto;
 }
 
 .tg-victorian {
     display: flex;
-    margin-bottom: 5rem;
+    justify-content: center;
+    margin-bottom: 7rem;
     gap: 3rem;
 }
 .victorian-text {
@@ -563,13 +566,14 @@ li a{
     flex-direction: column;
 }
 .tg-victorian img {
-    width: 70%;
+    width: 60%;
     height: auto;
 }
 
 .tg-chimney {
     display: flex;
-    margin-bottom: 5rem;
+    justify-content: center;
+    margin-bottom: 7rem;
     gap: 3rem;
 }
 .chimney-text {
@@ -577,12 +581,13 @@ li a{
     flex-direction: column;
 }
 .tg-chimney img {
-    width: 70%;
+    width: 60%;
     height: auto;
 }
 
 .tg-labrary {
     display: flex;
+    justify-content: center;
     gap: 3rem;
 }
 .labrary-text {
@@ -590,7 +595,7 @@ li a{
     flex-direction: column;
 }   
 .tg-labrary img {
-    width: 70%;
+    width: 60%;
     height: auto;
 }
 
@@ -680,6 +685,7 @@ footer {
 }
 .footer-link p {
     color: #fff;
+    padding-top: 1em;
     
 }
 .footer-box h5 {
