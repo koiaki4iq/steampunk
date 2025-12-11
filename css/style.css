@@ -12,8 +12,8 @@ html {
   --h1-size: clamp(2.4rem, 5vw, 5.0rem);
   --h2-size: clamp(1.8rem, 3.5vw, 4.0rem);
   --h3-size: clamp(2.5rem, 5vw, 4.0rem);
-  --h4-size: clamp(1.6rem, 5vw, 2.5rem);
-  --p-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  --h4-size: clamp(1.4rem, 5vw, 2.5rem);
+  --p-size: clamp(1.2rem, 2.5vw, 1.6rem);
   --max-width: 1200px
 }
     h1 {
@@ -611,7 +611,8 @@ li a{
         display: block;
     }
     .tg h2 {
-        margin: 0.5rem;
+        display: block;
+        margin: 0.5rem 0;
     }
     .tg-info {
         display: block;
@@ -642,22 +643,34 @@ li a{
         display: block;
         margin-bottom: 5rem;
     }
+    .engine-text {
+       display: none
+    }
     .tg-blass {
         flex-direction: column-reverse;
         gap: 0;
     }
     .blass-text {
-        display: block;
+        display: none;
     }
     .tg-victorian {
         display: block;
+    }
+    .victorian-text {
+        display: none;
     }
     .tg-chimney {
         flex-direction: column-reverse;
         gap: 0;
     }
+    .chimney-text {
+        display: none;
+    }
     .tg-labrary {
         display: block;
+    }
+    .labrary-text {
+        display: none
     }
 }
 
@@ -687,6 +700,10 @@ footer {
     padding: 3em 0 0 3em;
     gap: 2rem;
 }
+.footer-sns img {
+    width: 5%;
+    height: auto;
+}
 .footer-link {
     margin-top: 3rem;
 }
@@ -708,15 +725,28 @@ footer {
         height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo {
+        margin: 1rem 0 0 1rem;
     }
     .footer-box {
         display: block;
         padding-left: 0;
     }
+    .footer-sns {
+        padding: 0;
+        margin: 1rem 0 0 1rem;
+        gap: 1rem;
+    }
+
+    .footer-link {
+        margin-left: 1rem;
+    }
     .footer-box h5 {
         display: block;
-        margin-top: 3rem;
+        margin: 1rem 0 0 1rem;
+        padding: 0;
     }
 }
 
