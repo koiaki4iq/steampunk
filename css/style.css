@@ -131,6 +131,7 @@ li a{
     transform: translateY(-6px) rotate(33deg);
 }
 @media screen and (max-width: 480px) {
+
     .hamburger{
         top: 20px;
         right: auto;
@@ -189,10 +190,17 @@ body {
         padding-left: 1.5em;
         padding-bottom: 2em;
     }
+    .header-text  {
+        margin: 1.5rem 0 0 3.0rem;
+    }
+    .header-text p {
+        font-size: 1.0rem;
+    }
     .hero h3 {
         text-shadow: none;
         font-size: 1.2rem;
         text-align: left;
+        margin-left: 2rem;
 
     }
     
@@ -304,7 +312,16 @@ li a{
     top: 22px;
     transform: translateY(-6px) rotate(33deg);
 }
-    
+
+@media screen and (max-width: 480px) {
+    nav {
+        background-image: none;
+    }
+    li a {
+        display: flex;
+        padding: 1rem;
+    }
+}
 
 
 
@@ -639,9 +656,10 @@ li a{
         text-align: start;
         margin-bottom: 3rem;
     }
+    
     .tg-engine {
         display: block;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
     .engine-text {
        display: none
@@ -649,12 +667,14 @@ li a{
     .tg-blass {
         flex-direction: column-reverse;
         gap: 0;
+        margin-bottom: 2rem;
     }
     .blass-text {
         display: none;
     }
     .tg-victorian {
         display: block;
+        margin-bottom: 2rem;
     }
     .victorian-text {
         display: none;
@@ -662,6 +682,7 @@ li a{
     .tg-chimney {
         flex-direction: column-reverse;
         gap: 0;
+        margin-bottom: 2rem;
     }
     .chimney-text {
         display: none;
@@ -690,15 +711,21 @@ footer {
     justify-content: center;
     gap: 18rem;
 }
+.footer-imgbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .footer-logo {
-    width: 30%;
+    width: 100%;
     height: auto;
     margin: 5rem 0 0 2rem;
 }
 .footer-sns {
     display: flex;
-    padding: 3em 0 0 3em;
-    gap: 2rem;
+    justify-content: flex-end;
+    padding: 3em 0 0 0em;
+    gap: 3.3rem;
 }
 .footer-sns img {
     width: 5%;
@@ -727,7 +754,13 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .footer-imgbox {
+        display: block;
+        width: 50%;
+    }
     .footer-logo {
+        width: 50%;
+        height: auto;
         margin: 1rem 0 0 1rem;
     }
     .footer-box {
@@ -735,6 +768,7 @@ footer {
         padding-left: 0;
     }
     .footer-sns {
+        display: block;
         padding: 0;
         margin: 1rem 0 0 1rem;
         gap: 1rem;
@@ -825,6 +859,12 @@ footer {
 .rivet-box .rivet.br {
   bottom: -8px;
   right: -8px;
+}
+
+@media screen and (max-width: 440px) {
+    .rivet-box {
+        margin-left: 1rem;
+    }
 }
 
 
@@ -1043,7 +1083,7 @@ font-weight: bold;
 background-color: #dedede; 
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
 .kaisha,
 .kaisha tr,
 .kaisha td,
