@@ -167,7 +167,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding-left: 19vw;
+    padding-left: 15vw;
     padding-bottom: 3vw;
     margin-bottom: 10rem;
 }
@@ -709,7 +709,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 18rem;
+    gap: 28rem;
 }
 .footer-imgbox {
     display: flex;
@@ -732,7 +732,7 @@ footer {
     height: auto;
 }
 .footer-link {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 .footer-link p {
     color: #fff;
