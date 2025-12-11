@@ -690,7 +690,7 @@ footer {
 }
 .footer-link p {
     color: #fff;
-    padding-top: 1em;
+    padding-top: 0.5em;
     
 }
 .footer-box h5 {
@@ -957,6 +957,13 @@ footer {
     height: auto;
 }
 
+
+
+
+
+
+
+
 /* link */
 .banner {
     display: flex;
@@ -966,4 +973,48 @@ footer {
 }
 .banner img {
     margin-top: 5rem;
+}
+
+
+
+
+
+
+
+/* about us */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h1 {
+    margin: 5rem auto;
+}
+.about p {
+    margin-bottom: 5rem;
+}
+.kaisha {
+width: 100%;
+max-width: 700px;
+margin-bottom: 5rem;
+}
+
+.kaisha th,
+.kaisha td {
+border: 1px solid #ccc;
+padding: 20px;
+}
+
+.kaisha th {
+font-weight: bold;
+background-color: #dedede; 
+}
+
+@media screen and (max-width: 440px) {
+.kaisha,
+.kaisha tr,
+.kaisha td,
+.kaisha th {display:block;}
+.kaisha th {width:auto;}
 }

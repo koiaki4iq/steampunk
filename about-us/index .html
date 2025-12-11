@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>steampunk</title>
+
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+<!--ビューポート-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--jQuery本体-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+
+<!--ready関数-->
+
+<!-- ハンバーガーメニュー -->
+<script>
+$(function(){
+  $('#hamburger').on('click',function(){
+    $('#hamburger').toggleClass("open");
+    $('#header-menu').slideToggle();
+  });
+});
+</script>
+
+<!-- ハンバーガーメニュー内のテキスト切り替え -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.hamburger-menu a');
+
+  links.forEach(link => {
+    const originalText = link.textContent;
+    const hoverText = link.dataset.hover;
+
+    link.addEventListener('mouseenter', () => {
+      link.textContent = hoverText;
+    });
+
+    link.addEventListener('mouseleave', () => {
+      link.textContent = originalText;
+    });
+  });
+});
+</script> 
+
+
+</head>
+
+<body>
+  <div class="sub-header-color">
+    <div class="sub-header">
+      <div class="sub-header-text">
+        <p>-スチームパンク情報ギルド-</p>
+      </div>
+      <div class="sub-header-logo">
+        <a href="../index.html"><img src="../img/header_logo.png" alt="リュルストタールのロゴマーク" width="80" height="65"></a>
+      </div>
+      <nav class="hamburger-menu">
+        <ul id="header-menu">
+            <li><a href="../gazette/index.html" data-hover="イベント情報">Old Engine Plaza</a></li>
+            <li><a href="https://ak-steampunk.blush.jp/" data-hover="交流掲示板">Brass Alley</a></li>
+            <li><a href="../fashion/index.html" data-hover="ファッション">Victorian Lane</a></li>
+            <li><a href="../crafts/index.html" data-hover="クラフト">Chimney Avenue</a></li>
+            <li><a href="../labrary/index.html" data-hover="スチームパンクとは">Steam Library</a></li>
+            <li><a href="../link/index .html" data-hover="同盟ギルド">Clockwork Alliance</a></li>
+            <li><a href="../index.html" data-hover="ホーム">Lürßtal</a></li>
+            <div class="rivet-box">
+              <span class="rivet bl"></span>
+              <span class="rivet br"></span>
+              <img src="../img/footer_ig.png" alt="" width="30" height="30">
+              <img src="../img/footer_tk.png" alt="" width="30" height="30">
+              <img src="../img/footer_x.png" alt="" width="30" height="30">
+            </div>
+        </ul>
+      </nav>
+      <div class="sub-header-burger">
+        <div id="hamburger" class="sub-hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- about us   -->
+<section class="about">
+  <h1>Lürßtalについて</h1>
+  <p>Lürßtal(リュルストタール)を舞台としたスチームパンク情報ギルドは<br>
+    アパレルブランド「アクロの丘」により運営されています</p>
+
+  <table class="kaisha">
+  <tr>
+  <th>会社名</th>
+  <td>株式会社アクロの丘</td>
+  </tr>
+  <tr>
+  <th>所在地</th>
+  <td>東京都千代田区秋葉原0-0-0</td>
+  </tr>
+  <tr>
+  <th>電話</th>
+  <td>03-0000-0000</td>
+  </tr>
+  <tr>
+  <th>内容</th>
+  <td>ゴシック系、スチームパンク系ファッションをメインとした<br>
+    アパレルブランド「アクロの丘」やスチームパンク情報サイト<br>
+    「Lürßtal」やイベントの運営</td>
+  </tr>
+  </table>  
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="footer-box">
+    <div>
+      <a href="../index.html"><img class="footer-logo" src="../img/footer_logo.png" alt="" width="153" height="124"></a>
+      <div class="footer-sns">
+        <img src="../img/footer_ig.png" alt="" width="30" height="30">
+        <img src="../img/footer_tk.png" alt="" width="30" height="30">
+        <img src="../img/footer_x.png" alt="" width="30" height="30">
+      </div>
+    </div>
+    <div class="footer-link">
+      <a href="../gazette/index.html"><p>Old Engine Plaza</p></a>
+      <a href="../https://ak-steampunk.blush.jp/"><p>Brass Alley</p></a>
+      <a href="../fashion/index.html"><p>Victorian Lane</p></a>
+      <a href="../crafts/index.html"><p>Chimney Avenue</p></a>
+      <a href="../labrary/index.html"><p>Steam Library</p></a>
+      <a href="../index.html"><p>Lürßtal</p></a>
+    </div>
+    <h5>&copy; 2025 Lürßtal</h5>
+  </div>
+</footer>
+</body>
+
+</html>
