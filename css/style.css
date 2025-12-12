@@ -1038,6 +1038,19 @@ footer {
 
 
 /* link */
+.link-section {
+    margin: 5rem auto;
+}
+.link-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.link-text p {
+    margin-top: 2rem;
+}
+
 .banner {
     display: flex;
     flex-direction: column;
