@@ -148,6 +148,12 @@ li a{
 body {
     background-color: #fffbe2;
 }
+@media screen and (max-width: 480px) {
+    body {
+        overflow: hidden;
+    }
+}
+
 
 
 /* ヘッダー */
@@ -479,6 +485,9 @@ li a{
         padding: 0;
     }
     .preview {
+        display: block;
+    }
+    .preview img {
         display: none;
     }
     .row {
