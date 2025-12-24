@@ -7,6 +7,7 @@ html {
   font-weight: 400;
   font-style: normal;
   font-size: 62.5%
+  
 }
 :root {
   --h1-size: clamp(2.4rem, 5vw, 5.0rem);
@@ -131,7 +132,9 @@ li a{
     transform: translateY(-6px) rotate(33deg);
 }
 @media screen and (max-width: 480px) {
+    nav {
 
+    }
     .hamburger{
         top: 20px;
         right: auto;
@@ -149,9 +152,9 @@ body {
     background-color: #fffbe2;
 }
 @media screen and (max-width: 480px) {
-    body {
-        /* overflow: hidden; */
-    }
+    /* body {
+        overflow: hidden;
+    } */
 }
 
 
@@ -491,8 +494,10 @@ li a{
         display: block;
     }
     .preview img {
-        display: none;
-    }
+        width: 50%;
+        height: auto;
+        margin: 1rem auto;
+    } 
     .row {
         display: block;
         margin: 0 auto;
@@ -641,6 +646,7 @@ li a{
     }
     .tg h2 {
         display: block;
+        text-align: center;
         margin: 0.5rem 0;
     }
     .tg-info {
@@ -671,12 +677,16 @@ li a{
     
     .tg-engine {
         display: block;
+        text-align: center;
         margin-bottom: 2rem;
+
     }
     .engine-text {
        display: none
     }
     .tg-blass {
+        display: block;
+        text-align: center;
         flex-direction: column-reverse;
         gap: 0;
         margin-bottom: 2rem;
@@ -686,12 +696,15 @@ li a{
     }
     .tg-victorian {
         display: block;
+        text-align: center;
         margin-bottom: 2rem;
     }
     .victorian-text {
         display: none;
     }
     .tg-chimney {
+        display: block;
+        text-align: center;
         flex-direction: column-reverse;
         gap: 0;
         margin-bottom: 2rem;
@@ -701,6 +714,7 @@ li a{
     }
     .tg-labrary {
         display: block;
+        text-align: center;
     }
     .labrary-text {
         display: none
@@ -791,7 +805,8 @@ footer {
     }
     .footer-box h5 {
         display: block;
-        margin: 1rem 0 0 1rem;
+        text-align: center;
+        margin: 1rem 0 1rem 1rem;
         padding: 0;
     }
 }
@@ -1040,6 +1055,22 @@ footer {
 .lbr-btm img {
     width: 80%;
     height: auto;
+}
+@media screen and (max-width: 440px) {
+    .labrary_title img {
+        margin: 3rem auto;
+    }
+    .lbr {
+        display: block;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .lbr-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
 }
 
 
