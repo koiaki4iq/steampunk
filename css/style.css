@@ -930,16 +930,21 @@ footer {
 }
 .crafts-text p {
     padding: 1em 0;
-    align-items: flex-start;
 }
 .crafts-btm {
     display: flex;
     margin: 5rem auto;
-    width: 5
-    30%;
+    width: 100%;
     height: auto;
 }
-
+@media screen and (max-width: 480px) {
+    .crafts-title {
+        margin: 3rem auto;
+    }
+    .crafts-text {
+        margin: 3rem auto;
+    }
+}
 
 
 
