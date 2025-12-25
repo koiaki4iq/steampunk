@@ -94,7 +94,6 @@ li a{
     z-index: 10;
 }
 .hamburger span {
-    /*3本の線を作る*/
     transition: all .3s;
     position: absolute;
     height: 4px;
@@ -946,9 +945,7 @@ footer {
 
 /* fashion */
 .fashion-title h3 { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin: 10rem;
 }
 .fashion-title img {
@@ -966,7 +963,7 @@ footer {
     margin-bottom: 1rem;
 }
 .fashion-text p {
-    padding: 1em
+    padding: 1em 0;
 }
 .fashion-btm {
     display: flex;
@@ -978,14 +975,34 @@ footer {
     height: auto;
     margin-bottom: 5rem;
 }
+@media screen and (max-width: 480px) {
+    .fashion-title h3 {
+        margin: 3rem auto;
+    }
+    .fashion-df {
+        display: block;
+        text-align: center;
+    }
+    .fashion-df img {
+        width: 70%;
+        height: auto;
+    }
+    .fashion-text h4 {
+        margin-top: 3rem;       
+    }
+    .fashion-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 
 
 /* gazette */
 .gzt-h3 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 10rem auto;
 }
 .gzt {
@@ -1014,9 +1031,25 @@ footer {
     font-weight: normal;
 }
 .gzt img {
+    width: 100%;
+    height: auto;
     margin-bottom: 5rem;
 }
-
+@media screen and (max-width: 480px) {
+    .gzt {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 5rem;
+    }
+    .gztimgbox {
+        text-align: center;
+    }
+    .gzt img {
+        width: 70%;
+        height: auto;
+    }
+}
+    
 
 
 
@@ -1056,7 +1089,7 @@ footer {
     width: 80%;
     height: auto;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
     .labrary_title img {
         margin: 3rem auto;
     }
