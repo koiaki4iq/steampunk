@@ -60,6 +60,12 @@ a:active {text-decoration: none;color: #dc81b3;}
 
 
 /* ハンバーガーメニュー */
+/* header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+} */
+
 nav {
     position: fixed;
     top: 0px;
@@ -85,14 +91,16 @@ li a{
     text-decoration: none;
 }
 .hamburger {
-    position: fixed;
-    top: 32px;
-    right: 32px;
+    position: relative;
+    /* top: 32px;
+    right: 32px; */
     cursor: pointer;
     width: 32px;
     height: 24px;
     z-index: 10;
+    margin: 1rem;
 }
+
 .hamburger span {
     transition: all .3s;
     position: absolute;
@@ -135,11 +143,11 @@ li a{
 
     }
     .hamburger{
-        top: 20px;
+        /* top: 20px;
         right: auto;
         left: 10px;
         width: 28px;
-        height: 22px;
+        height: 22px; */
     }
 }
 
@@ -171,19 +179,32 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     padding-left: 15vw;
-    padding-bottom: 3vw;
+    padding-bottom: 3vw;*/
     margin-bottom: 10rem;
+} 
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
 }
 .header-text p {
-    margin-top: 1rem;
+    margin: 1rem 0 0 5rem;
     color: #fff;
 }
-.hero h3 {
+.hero-text {
+    display: flex;
+    align-items: flex-end;
+    height: 400px;
+}
+.hero-text h3 {
+    margin: 0 0 0 25rem;
     text-align: center;
     white-space: nowrap;
     line-height: 1.9;
@@ -195,16 +216,22 @@ body {
     .hero {
         max-width: 100%;
         height: 30vh;
-        padding-left: 1.5em;
-        padding-bottom: 2em;
+        margin-bottom: 3rem;
+        /* padding-left: 1.5em;
+        padding-bottom: 2em; */
+
     }
-    .header-text  {
+    /* .header-text  {
         margin: 1.5rem 0 0 3.0rem;
-    }
+    } */
     .header-text p {
         font-size: 1.0rem;
+        margin-left: 1rem;
     }
-    .hero h3 {
+    .hero-text{
+        height: 150px;
+    }
+    .hero-text h3 {
         text-shadow: none;
         font-size: 1.2rem;
         text-align: left;
@@ -662,7 +689,7 @@ li a{
         height: auto;
     }
     .tg-info-deco {
-        visibility: hidden;
+        display: none;
     }
     .tg-bgc {
         background-color: transparent;
